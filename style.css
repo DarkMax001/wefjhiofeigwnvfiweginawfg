@@ -4,24 +4,16 @@ body, h1, h3, p {
     padding: 0;
 }
 
-/* Body with water gradient background */
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background: linear-gradient(to bottom, #aeefff, #4cc9f0, #0077b6);
     color: #033e5b;
     line-height: 1.6;
     padding: 30px;
-}
 
-/* Center content in a "card" */
-body {
-    max-width: 700px;
+    max-width: 900px;
     margin: 40px auto;
-    background: rgba(255, 255, 255, 0.85);
     border-radius: 15px;
-    padding: 25px;
-    box-shadow: 0 8px 25px rgba(0, 119, 182, 0.3);
-    backdrop-filter: blur(6px);
 }
 
 /* Main heading */
@@ -66,31 +58,36 @@ p:hover {
     transition: 0.3s;
 }
 
-/* Контейнер */
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
 
-/* Текст */
 .text {
     width: 50%;
+    border: 2px solid #0077b6;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
 }
 
-/* Блок з картинкою */
 .image-box {
     width: 50%;
-    background: #0077b6;
+    border: 2px solid #0077b6;
     padding: 10px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: white;
 }
 
 /* Картинка */
 .image-box img {
     width: 100%;
+
+.container {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+
+    background-color: #cceeff; /* голубий фон */
+    padding: 20px;
+    border-radius: 15px;
+}
     height: auto;
     border-radius: 10px;
     display: block;
