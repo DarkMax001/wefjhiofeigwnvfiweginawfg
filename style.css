@@ -95,3 +95,37 @@ p:hover {
     border-radius: 10px;
     display: block;
 }
+
+.wave {
+    position: absolute;
+    top: 25%; /* 1/4th down the page */
+    left: 0;
+    width: 200%;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 43%;
+    animation: waveMove 6s infinite linear;
+}
+
+/* Second layer for nicer effect */
+.wave::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 200%;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 40%;
+    animation: waveMove 10s infinite linear reverse;
+}
+
+/* Animation */
+@keyframes waveMove {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
