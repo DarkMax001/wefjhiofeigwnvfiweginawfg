@@ -75,9 +75,12 @@ p:hover {
     background-color: white;
 }
 
-/* Картинка */
 .image-box img {
     width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
 
 .container {
     display: flex;
